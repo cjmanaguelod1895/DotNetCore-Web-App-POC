@@ -5,7 +5,7 @@ name: SonarCloud Build Code Analysis
 steps:
 - name: Analyze code project
   image: sijaymm/sonar-msbuild:latest
-   environment:
+  environment:
     sonar_host:
       from_secret: sonar_host
     sonar_token:
